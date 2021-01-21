@@ -1,5 +1,5 @@
-# CNES Ruleset
-This repository stores the CNES VHDL Ruleset for the Design and VHDL handbook for VLSI development project
+# NanoXplore Ruleset
+This repository stores the NanoXplore (NXE) VHDL Ruleset for the Design and VHDL handbook for VLSI development project
 
 ## Introduction
 

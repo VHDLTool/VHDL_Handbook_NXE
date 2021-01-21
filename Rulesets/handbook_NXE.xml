@@ -3,8 +3,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="HANDBOOK ../XSD/handbook.xsd">
 	
-	<hb:Rule UID="CNE_00100">
-		<hb:RuleUID>CNE_00100</hb:RuleUID>
+	<hb:Rule UID="NXE_00100">
+		<hb:RuleUID>NXE_00100</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -34,17 +34,17 @@
 			<hb:SonarTag>Bad-practice</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_00100_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_00100_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_00100_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_00100_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_00100_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_00100_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_00100_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_00100_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_00200">
-		<hb:RuleUID>CNE_00200</hb:RuleUID>
+	<hb:Rule UID="NXE_00200">
+		<hb:RuleUID>NXE_00200</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -75,15 +75,15 @@
 			<hb:SonarTag>Bad-practice</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_00200_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_00200_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_00200_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_00200_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_00200_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_00200_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_00200_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_00200_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_00300">
-		<hb:RuleUID>CNE_00300</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_00300">
+		<hb:RuleUID>NXE_00300</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -113,15 +113,15 @@
 			<hb:SonarTag>Bad-practice</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_00300_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_00300_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_00300_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_00300_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_00300_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_00300_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_00300_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_00300_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_00400">
-		<hb:RuleUID>CNE_00400</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_00400">
+		<hb:RuleUID>NXE_00400</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -158,8 +158,8 @@
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_00500">
-		<hb:RuleUID>CNE_00500</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_00500">
+		<hb:RuleUID>NXE_00500</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -199,8 +199,8 @@ The separation by uppercase (NameOfTheSignal) is not used.</hb:LongDesc>
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_00600">
-		<hb:RuleUID>CNE_00600</hb:RuleUID>
+	<hb:Rule UID="NXE_00600">
+		<hb:RuleUID>NXE_00600</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -240,8 +240,8 @@ The separation by uppercase (NameOfTheConstant) is not used.</hb:LongDesc>
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_00700">
-		<hb:RuleUID>CNE_00700</hb:RuleUID>
+	<hb:Rule UID="NXE_00700">
+		<hb:RuleUID>NXE_00700</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -281,8 +281,8 @@ The separation by uppercase (NameOfTheProcess) is not used.</hb:LongDesc>
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_00800">
-		<hb:RuleUID>CNE_00800</hb:RuleUID>
+	<hb:Rule UID="NXE_00800">
+		<hb:RuleUID>NXE_00800</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -322,8 +322,8 @@ The separation by uppercase (NameOfTheGeneric) is not used.</hb:LongDesc>
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_00900">
-		<hb:RuleUID>CNE_00900</hb:RuleUID>
+	<hb:Rule UID="NXE_00900">
+		<hb:RuleUID>NXE_00900</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -361,8 +361,8 @@ The separation by uppercase (NameOfTheCustomtype) is not used.</hb:LongDesc>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_01000">
-		<hb:RuleUID>CNE_01000</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_01000">
+		<hb:RuleUID>NXE_01000</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -393,10 +393,10 @@ With this convention, designer will be able to track synthesis of variable and e
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01000_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_01000_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01000_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_01000_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01000_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_01000_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01000_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_01000_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
@@ -409,8 +409,8 @@ With this convention, designer will be able to track synthesis of variable and e
 		</hb:RuleParams>		
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_01100">
-		<hb:RuleUID>CNE_01100</hb:RuleUID>
+	<hb:Rule UID="NXE_01100">
+		<hb:RuleUID>NXE_01100</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -443,15 +443,15 @@ With this convention, designer will be able to track synthesis of variable and e
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01100_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_01100_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01100_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_01100_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01100_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_01100_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01100_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_01100_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_01200">
-		<hb:RuleUID>CNE_01200</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_01200">
+		<hb:RuleUID>NXE_01200</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -481,10 +481,10 @@ With this convention, designer will be able to track synthesis of variable and e
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01200_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_01200_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01200_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_01200_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01200_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_01200_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01200_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_01200_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
@@ -496,8 +496,8 @@ With this convention, designer will be able to track synthesis of variable and e
 			</hb:StringParam>
 		</hb:RuleParams>
 	</hb:Rule>
-	<hb:Rule UID="CNE_01300">
-		<hb:RuleUID>CNE_01300</hb:RuleUID>
+	<hb:Rule UID="NXE_01300">
+		<hb:RuleUID>NXE_01300</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -527,17 +527,17 @@ With this convention, designer will be able to track synthesis of variable and e
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01300_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_01300_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01300_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_01300_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01300_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_01300_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01300_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_01300_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_01400">
-		<hb:RuleUID>CNE_01400</hb:RuleUID>
+	<hb:Rule UID="NXE_01400">
+		<hb:RuleUID>NXE_01400</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -568,17 +568,17 @@ With this convention, designer will be able to track synthesis of variable and e
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01400_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_01400_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01400_bad.vhd</hb:BadExDesc>
-			<hb:BadExample >CNE_01400_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01400_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_01400_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01400_bad.vhd</hb:BadExDesc>
+			<hb:BadExample >NXE_01400_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_01500">
-		<hb:RuleUID>CNE_01500</hb:RuleUID>
+	<hb:Rule UID="NXE_01500">
+		<hb:RuleUID>NXE_01500</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -608,10 +608,10 @@ With this convention, designer will be able to track synthesis of variable and e
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01500_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_01500_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01500_bad.vhd</hb:BadExDesc>
-			<hb:BadExample >CNE_01500_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01500_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_01500_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01500_bad.vhd</hb:BadExDesc>
+			<hb:BadExample >NXE_01500_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
@@ -619,8 +619,8 @@ With this convention, designer will be able to track synthesis of variable and e
 	
 	
 	
-	<hb:Rule UID="CNE_01600">
-		<hb:RuleUID>CNE_01600</hb:RuleUID>
+	<hb:Rule UID="NXE_01600">
+		<hb:RuleUID>NXE_01600</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -650,10 +650,10 @@ With this convention, designer will be able to track synthesis of variable and e
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01600_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_01600_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01600_bad.vhd</hb:BadExDesc>
-			<hb:BadExample >CNE_01600_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01600_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_01600_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01600_bad.vhd</hb:BadExDesc>
+			<hb:BadExample >NXE_01600_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
@@ -666,8 +666,8 @@ With this convention, designer will be able to track synthesis of variable and e
 		</hb:RuleParams>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_01700">
-		<hb:RuleUID>CNE_01700</hb:RuleUID>
+	<hb:Rule UID="NXE_01700">
+		<hb:RuleUID>NXE_01700</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -698,17 +698,17 @@ Thus, a signal that represents a rising edge of a signal named My_Sig is My_Sig_
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01700_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_01700_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01700_bad.vhd</hb:BadExDesc>
-			<hb:BadExample >CNE_01700_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01700_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_01700_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01700_bad.vhd</hb:BadExDesc>
+			<hb:BadExample >NXE_01700_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_01800">
-		<hb:RuleUID>CNE_01800</hb:RuleUID>
+	<hb:Rule UID="NXE_01800">
+		<hb:RuleUID>NXE_01800</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -739,15 +739,15 @@ Thus, a signal that represents a falling edge of a signal named My_Sig is My_Sig
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01800_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_01800_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01800_bad.vhd</hb:BadExDesc>
-			<hb:BadExample >CNE_01800_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01800_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_01800_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01800_bad.vhd</hb:BadExDesc>
+			<hb:BadExample >NXE_01800_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_01900">
-		<hb:RuleUID>CNE_01900</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_01900">
+		<hb:RuleUID>NXE_01900</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -780,16 +780,16 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_01900_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_01900_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_01900_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_01900_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_01900_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_01900_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01900_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_01900_bad</hb:BadExample>
 			<hb:FigureDesc></hb:FigureDesc>
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="CNE_02000">
-		<hb:RuleUID>CNE_02000</hb:RuleUID>
+	<hb:Rule UID="NXE_02000">
+		<hb:RuleUID>NXE_02000</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>Yosys-ghdl</hb:Engine>
@@ -819,17 +819,17 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_02000_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_02000_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_02000_bad.vhd</hb:BadExDesc>
-			<hb:BadExample >CNE_02000_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_02000_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_02000_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_02000_bad.vhd</hb:BadExDesc>
+			<hb:BadExample >NXE_02000_bad</hb:BadExample>
 			<hb:FigureDesc></hb:FigureDesc>
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
 
-	<hb:Rule UID="CNE_02100">
-		<hb:RuleUID>CNE_02100</hb:RuleUID>
+	<hb:Rule UID="NXE_02100">
+		<hb:RuleUID>NXE_02100</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -859,10 +859,10 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_02100_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_02100_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_02100_bad.vhd</hb:BadExDesc>
-			<hb:BadExample >CNE_02100_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_02100_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_02100_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_02100_bad.vhd</hb:BadExDesc>
+			<hb:BadExample >NXE_02100_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
@@ -885,8 +885,8 @@ If a significant number of registration of a same signal is used, use an array f
 		</hb:RuleParams>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_02200">
-		<hb:RuleUID>CNE_02200</hb:RuleUID>
+	<hb:Rule UID="NXE_02200">
+		<hb:RuleUID>NXE_02200</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -924,8 +924,8 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="CNE_02300">
-		<hb:RuleUID>CNE_02300</hb:RuleUID>
+	<hb:Rule UID="NXE_02300">
+		<hb:RuleUID>NXE_02300</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -956,16 +956,16 @@ It is also best practice to keep the clock name the same between entity ports wi
 			<hb:SonarTag>Bad-practice</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_02300_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_02300_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_02300_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_02300_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_02300_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_02300_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_02300_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_02300_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="CNE_02400">
-		<hb:RuleUID>CNE_02400</hb:RuleUID>
+	<hb:Rule UID="NXE_02400">
+		<hb:RuleUID>NXE_02400</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -996,15 +996,15 @@ It is also best practice to keep the reset name the same between entity ports wi
 			<hb:SonarTag>Bad-practice</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_02400_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_02400_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_02400_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_02400_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_02400_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_02400_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_02400_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_02400_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_02500">
-		<hb:RuleUID>CNE_02500</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_02500">
+		<hb:RuleUID>NXE_02500</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1041,8 +1041,8 @@ It is also best practice to keep the reset name the same between entity ports wi
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_02600">
-		<hb:RuleUID>CNE_02600</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_02600">
+		<hb:RuleUID>NXE_02600</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1079,8 +1079,8 @@ It is also best practice to keep the reset name the same between entity ports wi
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_02700">
-		<hb:RuleUID>CNE_02700</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_02700">
+		<hb:RuleUID>NXE_02700</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1119,8 +1119,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_02800">
-		<hb:RuleUID>CNE_02800</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_02800">
+		<hb:RuleUID>NXE_02800</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1159,8 +1159,8 @@ The definition area (for signals, constants components...) is not included in th
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_02900">
-		<hb:RuleUID>CNE_02900</hb:RuleUID>
+	<hb:Rule UID="NXE_02900">
+		<hb:RuleUID>NXE_02900</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1197,8 +1197,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_03000">
-		<hb:RuleUID>CNE_03000</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_03000">
+		<hb:RuleUID>NXE_03000</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1235,8 +1235,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_03100">
-		<hb:RuleUID>CNE_03100</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_03100">
+		<hb:RuleUID>NXE_03100</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1273,8 +1273,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_03200">
-		<hb:RuleUID>CNE_03200</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_03200">
+		<hb:RuleUID>NXE_03200</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1311,8 +1311,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_03300">
-		<hb:RuleUID>CNE_03300</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_03300">
+		<hb:RuleUID>NXE_03300</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1349,8 +1349,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_03400">
-		<hb:RuleUID>CNE_03400</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_03400">
+		<hb:RuleUID>NXE_03400</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1387,8 +1387,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_03500">
-		<hb:RuleUID>CNE_03500</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_03500">
+		<hb:RuleUID>NXE_03500</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1425,8 +1425,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_03600">
-		<hb:RuleUID>CNE_03600</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_03600">
+		<hb:RuleUID>NXE_03600</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1465,8 +1465,8 @@ The definition area (for signals, constants components...) is not included in th
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_03700">
-		<hb:RuleUID>CNE_03700</hb:RuleUID>
+	<hb:Rule UID="NXE_03700">
+		<hb:RuleUID>NXE_03700</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1503,8 +1503,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_03800">
-		<hb:RuleUID>CNE_03800</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_03800">
+		<hb:RuleUID>NXE_03800</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1542,8 +1542,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_03900">
-		<hb:RuleUID>CNE_03900</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_03900">
+		<hb:RuleUID>NXE_03900</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1580,8 +1580,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_04000">
-		<hb:RuleUID>CNE_04000</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_04000">
+		<hb:RuleUID>NXE_04000</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1618,8 +1618,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_04100">
-		<hb:RuleUID>CNE_04100</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_04100">
+		<hb:RuleUID>NXE_04100</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1657,8 +1657,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_04200">
-		<hb:RuleUID>CNE_04200</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_04200">
+		<hb:RuleUID>NXE_04200</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1695,8 +1695,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_04300">
-		<hb:RuleUID>CNE_04300</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_04300">
+		<hb:RuleUID>NXE_04300</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1733,8 +1733,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_04400">
-		<hb:RuleUID>CNE_04400</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_04400">
+		<hb:RuleUID>NXE_04400</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1771,8 +1771,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_04500">
-		<hb:RuleUID>CNE_04500</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_04500">
+		<hb:RuleUID>NXE_04500</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1803,15 +1803,15 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:SonarTag>Design</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_04500_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>CNE_04500_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_04500_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>CNE_04500_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_04500_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_04500_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_04500_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_04500_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="CNE_04600">
-		<hb:RuleUID>CNE_04600</hb:RuleUID>
+	</hb:Rule><hb:Rule UID="NXE_04600">
+		<hb:RuleUID>NXE_04600</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1850,8 +1850,8 @@ Isolating them from initialized signal improves identification of these signals 
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_04700">
-		<hb:RuleUID>CNE_04700</hb:RuleUID>
+	<hb:Rule UID="NXE_04700">
+		<hb:RuleUID>NXE_04700</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1864,7 +1864,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Name>Finite State Machine single process based</hb:Name>
 			<hb:IsParent>false</hb:IsParent>
 			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>CNE_04600</hb:ParentUID>
+			<hb:ParentUID>NXE_04600</hb:ParentUID>
 			<hb:Technology>VLSI</hb:Technology>
 			<hb:ApplicationFields>General</hb:ApplicationFields>
 			<hb:Category>Design</hb:Category>
@@ -1881,8 +1881,8 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_04700_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_04700_good</hb:GoodExample>
+			<hb:GoodExDesc>Extracted from NXE_04700_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_04700_good</hb:GoodExample>
 			<hb:BadExDesc></hb:BadExDesc>
 			<hb:BadExample ></hb:BadExample>
 			<hb:FigureDesc></hb:FigureDesc>
@@ -1890,8 +1890,8 @@ Isolating them from initialized signal improves identification of these signals 
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_04800">
-		<hb:RuleUID>CNE_04800</hb:RuleUID>
+	<hb:Rule UID="NXE_04800">
+		<hb:RuleUID>NXE_04800</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -1904,7 +1904,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Name>Finite State Machine two processes based</hb:Name>
 			<hb:IsParent>false</hb:IsParent>
 			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>CNE_04600</hb:ParentUID>
+			<hb:ParentUID>NXE_04600</hb:ParentUID>
 			<hb:Technology>VLSI</hb:Technology>
 			<hb:ApplicationFields>General</hb:ApplicationFields>
 			<hb:Category>Design</hb:Category>
@@ -1921,8 +1921,8 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_04800_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_04800_good</hb:GoodExample>
+			<hb:GoodExDesc>Extracted from NXE_04800_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_04800_good</hb:GoodExample>
 			<hb:BadExDesc></hb:BadExDesc>
 			<hb:BadExample ></hb:BadExample>
 			<hb:FigureDesc></hb:FigureDesc>
@@ -1930,8 +1930,8 @@ Isolating them from initialized signal improves identification of these signals 
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_04900">
-		<hb:RuleUID>CNE_04900</hb:RuleUID>
+	<hb:Rule UID="NXE_04900">
+		<hb:RuleUID>NXE_04900</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -1961,17 +1961,17 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:SonarTag>Unpredictable</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_04900_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_04900_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from CNE_04900_bad.vhd</hb:BadExDesc>
-			<hb:BadExample >CNE_04900_bad</hb:BadExample>
+			<hb:GoodExDesc>Extracted from NXE_04900_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_04900_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_04900_bad.vhd</hb:BadExDesc>
+			<hb:BadExample >NXE_04900_bad</hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_05000">
-		<hb:RuleUID>CNE_05000</hb:RuleUID>
+	<hb:Rule UID="NXE_05000">
+		<hb:RuleUID>NXE_05000</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -2010,8 +2010,8 @@ Isolating them from initialized signal improves identification of these signals 
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_05100">
-		<hb:RuleUID>CNE_05100</hb:RuleUID>
+	<hb:Rule UID="NXE_05100">
+		<hb:RuleUID>NXE_05100</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -2024,7 +2024,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Name>Multiplexor single process based</hb:Name>
 			<hb:IsParent>false</hb:IsParent>
 			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>CNE_05000</hb:ParentUID>
+			<hb:ParentUID>NXE_05000</hb:ParentUID>
 			<hb:Technology>VLSI</hb:Technology>
 			<hb:ApplicationFields>General</hb:ApplicationFields>
 			<hb:Category>Design</hb:Category>
@@ -2041,8 +2041,8 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_05100_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_05100_good</hb:GoodExample>
+			<hb:GoodExDesc>Extracted from NXE_05100_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_05100_good</hb:GoodExample>
 			<hb:BadExDesc></hb:BadExDesc>
 			<hb:BadExample />
 			<hb:FigureDesc></hb:FigureDesc>
@@ -2050,8 +2050,8 @@ Isolating them from initialized signal improves identification of these signals 
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_05200">
-		<hb:RuleUID>CNE_05200</hb:RuleUID>
+	<hb:Rule UID="NXE_05200">
+		<hb:RuleUID>NXE_05200</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -2064,7 +2064,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Name>Multiplexor direct assertion based</hb:Name>
 			<hb:IsParent>false</hb:IsParent>
 			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>CNE_05000</hb:ParentUID>
+			<hb:ParentUID>NXE_05000</hb:ParentUID>
 			<hb:Technology>VLSI</hb:Technology>
 			<hb:ApplicationFields>General</hb:ApplicationFields>
 			<hb:Category>Design</hb:Category>
@@ -2081,16 +2081,16 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from CNE_05200_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample >CNE_05200_good</hb:GoodExample>
+			<hb:GoodExDesc>Extracted from NXE_05200_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample >NXE_05200_good</hb:GoodExample>
 			<hb:BadExDesc></hb:BadExDesc>
 			<hb:BadExample />
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="CNE_05300">
-		<hb:RuleUID>CNE_05300</hb:RuleUID>
+	<hb:Rule UID="NXE_05300">
+		<hb:RuleUID>NXE_05300</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -2129,8 +2129,8 @@ Isolating them from initialized signal improves identification of these signals 
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_05400">
-		<hb:RuleUID>CNE_05400</hb:RuleUID>
+	<hb:Rule UID="NXE_05400">
+		<hb:RuleUID>NXE_05400</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -2169,8 +2169,8 @@ Isolating them from initialized signal improves identification of these signals 
 		</hb:RuleDesc>
 	</hb:Rule>
 	
-	<hb:Rule UID="CNE_05500">
-		<hb:RuleUID>CNE_05500</hb:RuleUID>
+	<hb:Rule UID="NXE_05500">
+		<hb:RuleUID>NXE_05500</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -2209,16 +2209,10 @@ Isolating them from initialized signal improves identification of these signals 
 		</hb:RuleDesc>
 	</hb:Rule>
 	<hb:RuleSetHist>
-		<hb:Version>5</hb:Version>
-		<hb:Creation>2014-11-13</hb:Creation>
-		<hb:Modified>2020-07-23</hb:Modified>
-		<hb:Revision>V1 : 2014-11-13 : Creation
-V2 : 2014-12-01 : Update rules with results from CNES poll and 1st draft review.
-V3 : 2015-02-17 : Update of rules with remarks from partners about V2 revision.
-V4 : 2015-07-16 : Update rules with examples
-V5 : 2017-11-24 : Creation of Sonarqube data and update of some status
-V6 : 2020-04-23 : Update status to implemented for rules in software. Correct sonarqube elements. Add parameters.
-V7 : 2020-07-23 : update engine feature
+		<hb:Version>1</hb:Version>
+		<hb:Creation>2021-01-21</hb:Creation>
+		<hb:Modified>2021-01-21</hb:Modified>
+		<hb:Revision>V1 : 2021-01-21 : Creation based on CNE V7 (2020-07-23)
 		</hb:Revision>
 	</hb:RuleSetHist>	
 

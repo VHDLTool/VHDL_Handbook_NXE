@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hb:RuleSet xmlns:hb="HANDBOOK"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	 
+	<hb:RuleSetHist>
+		<hb:Version>1.0</hb:Version>
+		<hb:Creation>2021-01-21</hb:Creation>
+		<hb:Modified>2021-01-21</hb:Modified>
+		<hb:Revision>
+			V1 : 2021-01-21 : Creation based on STD rule set V7(2020-07-23) and NXE rule set V1(2021-01-21) 
+		</hb:Revision>
+	</hb:RuleSetHist>
+	
+</hb:RuleSet>

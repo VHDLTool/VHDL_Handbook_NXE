@@ -1,16 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hb:RuleSet xmlns:hb="HANDBOOK"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="HANDBOOK ../XSD/handbook.xsd">
-	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="HANDBOOK ../XSD/handbook.xsd">
+	<hb:Rule UID="NXE_000010">
+		<hb:RuleUID>NXE_000010</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Instance naming</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_00100</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>Naming</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>Identifying signal active level by reading its name allows better readability and maintainability.</hb:Rationale>
+			<hb:ShortDesc>The entity name start with prefix : "ins_" to form the isntance name.</hb:ShortDesc>
+			<hb:LongDesc> The instance name must reflect the entity name it instanciate.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>High</hb:RemediationEffort>
+			<hb:SonarTag>Bad-practice</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00020">
+		<hb:RuleUID>NXE_00020</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>5</hb:Version>
+			<hb:Creation>2014-09-30</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Convention for signal naming</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_00100</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>Naming</hb:SubCategory>
+			<hb:Severity>Minor</hb:Severity>
+			<hb:Rationale>When a unique naming convention is applied to the whole source files from the design, then the resulting code is homogenized which increases readability.</hb:Rationale>
+			<hb:ShortDesc>Each word that composes a signal name are clearly identified with an underscore.</hb:ShortDesc>
+			<hb:LongDesc>In order to separate words in signal name the following convention is applied: name_of_the_signal.
+The separation by uppercase (NameOfTheSignal) is not used. Only lowercase, alphanumeric and underscore are allowed.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Minor</hb:SonarSeverity>
+			<hb:RemediationEffort>Medium</hb:RemediationEffort>
+			<hb:SonarTag>Convention</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample />
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample />
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_02600">
+		<hb:RuleUID>NXE_02600</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Length of signals name</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_02100</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>FileStructure</hb:SubCategory>
+			<hb:Severity>Minor</hb:Severity>
+			<hb:Rationale>Compact signal names improve readability.</hb:Rationale>
+			<hb:ShortDesc>Internal signal names length is less than 20 characters.</hb:ShortDesc>
+			<hb:LongDesc>No additional information.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Minor</hb:SonarSeverity>
+			<hb:RemediationEffort>Medium</hb:RemediationEffort>
+			<hb:SonarTag>User-experience</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc />
+			<hb:GoodExample />
+			<hb:BadExDesc />
+			<hb:BadExample />
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_000021">
+		<hb:RuleUID>NXE_000021</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Acronym and signal naming</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_00100</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>Naming</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>Identifying signal active level by reading its name allows better readability and maintainability.</hb:Rationale>
+			<hb:ShortDesc>Signal name should not be acronyms. </hb:ShortDesc>
+			<hb:LongDesc>Signal name should not be acronyms composed for design and that lead to understanding difficulties.
+			It can be used state-of-the art acronyms of standards acronyms e.g.: sdr,dfi,axi...</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>High</hb:RemediationEffort>
+			<hb:SonarTag>Bad-practice</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_000022">
+		<hb:RuleUID>NXE_000022</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Signal naming relevance</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_00100</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>Naming</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>Identifying signal active level by reading its name allows better readability and maintainability.</hb:Rationale>
+			<hb:ShortDesc>Signal name shall be relevant to help understand functionality or behavior </hb:ShortDesc>
+			<hb:LongDesc></hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>High</hb:RemediationEffort>
+			<hb:SonarTag>Bad-practice</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
 	<hb:Rule UID="NXE_00100">
 		<hb:RuleUID>NXE_00100</hb:RuleUID>
 		<hb:RuleHist>
-			<hb:Status>Validated</hb:Status>
+			<hb:Status>Release candidate</hb:Status>
 			<hb:Engine>None</hb:Engine>
-			<hb:Version>6</hb:Version>
-			<hb:Creation>2014-09-30</hb:Creation>
-			<hb:Modified>2020-04-23</hb:Modified>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
 			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
 		</hb:RuleHist>
 		<hb:RuleContent>
@@ -42,7 +237,525 @@
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+	<hb:Rule UID="NXE_00024">
+		<hb:RuleUID>NXE_00024</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Identification of ports direction inside entity port name at pinout level</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_00100</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>Naming</hb:SubCategory>
+			<hb:Severity>Minor</hb:Severity>
+			<hb:Rationale>Indicating the port direction inside the port name improves readability.</hb:Rationale>
+			<hb:ShortDesc>Entity port name at pinout level uses prefix to determine the port direction.</hb:ShortDesc>
+			<hb:LongDesc>Prefixes are: 
+				"i_" for input port, 
+				"o_" for output port, 
+				"b_" for bidirectional port.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>Medium</hb:RemediationEffort>
+			<hb:SonarTag>Convention</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc>Extracted from NXE_01100_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_01100_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01100_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_01100_bad</hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00025">
+		<hb:RuleUID>NXE_00025</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Identification of registered signals</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_00100</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>Naming</hb:SubCategory>
+			<hb:Severity>Minor</hb:Severity>
+			<hb:Rationale>Identifying signal that is clock delayed of another one by reading its name improves readability.</hb:Rationale>
+			<hb:ShortDesc>The suffix of a signal that is a registration of another one is: "_r".</hb:ShortDesc>
+			<hb:LongDesc>The signal source is also included inside the signal name.
+Thus, a signal that is clock delayed of a signal named My_Signal is My_Signal_r.
+If a small number of registration of a same signal is used (less or equal to 3), SIGNAL_r can become SIGNAL_rx where x is the number of registration stage.
+If a significant number of registration of a same signal is used, use an array for registration level instead of different signals.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>High</hb:RemediationEffort>
+			<hb:SonarTag>Convention</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc>Extracted from NXE_01900_good.vhd</hb:GoodExDesc>
+			<hb:GoodExample>NXE_01900_good</hb:GoodExample>
+			<hb:BadExDesc>Extracted from NXE_01900_bad.vhd</hb:BadExDesc>
+			<hb:BadExample>NXE_01900_bad</hb:BadExample>
+			<hb:FigureDesc></hb:FigureDesc>
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00026">
+		<hb:RuleUID>NXE_00600</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Validated</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>5</hb:Version>
+			<hb:Creation>2014-09-30</hb:Creation>
+			<hb:Modified>2020-04-23</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Convention for constant naming</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_00100</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>Naming</hb:SubCategory>
+			<hb:Severity>Minor</hb:Severity>
+			<hb:Rationale>When an unique naming convention is applied to the whole source files from the design, then the resulting code is homogenized which increases readability.</hb:Rationale>
+			<hb:ShortDesc>All "constant" names must be UPPERCASE alpha numeric and with "_" separator.</hb:ShortDesc>
+			<hb:LongDesc></hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Minor</hb:SonarSeverity>
+			<hb:RemediationEffort>Easy</hb:RemediationEffort>
+			<hb:SonarTag>Convention</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample />
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample />
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00027">
+		<hb:RuleUID>NXE_00027</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Implemented</hb:Status>
+			<hb:Engine>ZamiaCad</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Datapath elements initialization</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>tue</hb:IsSon>
+			<hb:ParentUID> STD_03800</hb:ParentUID>
+			<hb:Technology>FPGA</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>Reset</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>Initialization of synchronous elements contribute to deterministic reset behaviour and simulation match between functional and Post-Place and Route.</hb:Rationale>
+			<hb:ShortDesc>All datapath fliflops must be reset at least within 5 clocks.</hb:ShortDesc>
+			<hb:LongDesc>This means that input pipeline fliflops shall be explicitely reset in order to propagate initialization state during reset.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Bug</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>Medium</hb:RemediationEffort>
+			<hb:SonarTag>Unpredictable</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00028">
+		<hb:RuleUID>NXE_00028</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Implemented</hb:Status>
+			<hb:Engine>ZamiaCad</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Non Datapath elements initialization</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>tue</hb:IsSon>
+			<hb:ParentUID>STD_03800</hb:ParentUID>
+			<hb:Technology>FPGA</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>Reset</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>Initialization of synchronous elements contribute to deterministic reset behaviour and simulation match between functional and Post-Place and Route.</hb:Rationale>
+			<hb:ShortDesc>All non datapath flops must be reset explicitly</hb:ShortDesc>
+			<hb:LongDesc>This means that input pipeline fliflops shall be explicitely reset in order to propagate initialization state during reset.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Bug</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>Medium</hb:RemediationEffort>
+			<hb:SonarTag>Unpredictable</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00029">
+		<hb:RuleUID>NXE_00029</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Implemented</hb:Status>
+			<hb:Engine>ZamiaCad</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Shared data nature reset</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>tue</hb:IsSon>
+			<hb:ParentUID> STD_03800</hb:ParentUID>
+			<hb:Technology>FPGA</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>Reset</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>Initialization of synchronous elements contribute to deterministic reset behaviour and simulation match between functional and Post-Place and Route.</hb:Rationale>
+			<hb:ShortDesc>AIn the sme process, you mustn't have flops with reset and flops without reset</hb:ShortDesc>
+			<hb:LongDesc></hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Bug</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>Medium</hb:RemediationEffort>
+			<hb:SonarTag>Unpredictable</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00030">
+		<hb:RuleUID>NXE_00030</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Sensitivity list for synchronous processes</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>false</hb:IsSon>
+			<hb:ParentUID xsi:nil="true" />
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>Synchronous</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>Synchronous process with any extra signals added to sensitivity list may become asynchronous.
+Moreover, this practice risks adding combinational blocks on clock and reset trees.</hb:Rationale>
+			<hb:ShortDesc>A synchronous process needs only the clock and reset signals in its sensitivity list.</hb:ShortDesc>
+			<hb:LongDesc>For synchronous reset, the signal must not be declared in the sensitivity list</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Bug</hb:SonarType>
+			<hb:SonarSeverity>Blocker</hb:SonarSeverity>
+			<hb:RemediationEffort>Easy</hb:RemediationEffort>
+			<hb:SonarTag>Unpredictable</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00040">
+		<hb:RuleUID>NXE_00040</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Implemented</hb:Status>
+			<hb:Engine>ZamiaCad</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Sensitivity list for combinational processes </hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>false</hb:IsSon>
+			<hb:ParentUID>STD_05300</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>Combinational</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>The objective is to avoid latch generation at synthesis of a combinatorial process</hb:Rationale>
+			<hb:ShortDesc>All input signals shall be declared in the sensitivity list of the process</hb:ShortDesc>
+			<hb:LongDesc>No additional information.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Bug</hb:SonarType>
+			<hb:SonarSeverity>Blocker</hb:SonarSeverity>
+			<hb:RemediationEffort>Medium</hb:RemediationEffort>
+			<hb:SonarTag>Unpredictable</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc></hb:FigureDesc>
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00041">
+		<hb:RuleUID>NXE_00041</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Conditional test completness</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_05500</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>Combinational</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>The objective is to avoid latch generation at synthesis of a combinatorial process.</hb:Rationale>
+			<hb:ShortDesc>All cases shall be explicit by either if/else statements of allcase statements</hb:ShortDesc>
+			<hb:LongDesc>Use default case while not sure that all cases are covered</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Bug</hb:SonarType>
+			<hb:SonarSeverity>Blocker</hb:SonarSeverity>
+			<hb:RemediationEffort>High</hb:RemediationEffort>
+			<hb:SonarTag>Unpredictable</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc></hb:FigureDesc>
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00041">
+		<hb:RuleUID>NXE_00041</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>latch cells</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_05500</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>Combinational</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>The objective is to avoid latch generation at synthesis of a combinatorial process.</hb:Rationale>
+			<hb:ShortDesc>No latch cells shall be found in synthesized netlist file</hb:ShortDesc>
+			<hb:LongDesc></hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Bug</hb:SonarType>
+			<hb:SonarSeverity>Blocker</hb:SonarSeverity>
+			<hb:RemediationEffort>High</hb:RemediationEffort>
+			<hb:SonarTag>Unpredictable</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc></hb:FigureDesc>
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_04600">
+		<hb:RuleUID>NXE_04600</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Validated</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>5</hb:Version>
+			<hb:Creation>2014-09-30</hb:Creation>
+			<hb:Modified>2020-04-23</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Finite State Machine coding style</hb:Name>
+			<hb:IsParent>true</hb:IsParent>
+			<hb:IsSon>false</hb:IsSon>
+			<hb:ParentUID xsi:nil="true" />
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>StateMachine</hb:SubCategory>
+			<hb:Severity>Minor</hb:Severity>
+			<hb:Rationale>State machines are identified by synthesis tools. These tools do not understand all the exotic ways of coding state machines. In order to get a real state machine use an approved state machine coding style.</hb:Rationale>
+			<hb:ShortDesc>FSM are coded using an approved method.</hb:ShortDesc>
+			<hb:LongDesc>No additional information.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Bug</hb:SonarType>
+			<hb:SonarSeverity>Blocker</hb:SonarSeverity>
+			<hb:RemediationEffort>Major</hb:RemediationEffort>
+			<hb:SonarTag>User-experience</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc />
+			<hb:GoodExample />
+			<hb:BadExDesc />
+			<hb:BadExample />
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00050">
+		<hb:RuleUID>NXE_00050</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Simple state machine</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>NXE_04600</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>StateMachine</hb:SubCategory>
+			<hb:Severity>Note</hb:Severity>
+			<hb:Rationale>The objective is to avoid complex implementation and help undestanding</hb:Rationale>
+			<hb:ShortDesc>You can combine flops with next state combinatorial logic in a short signal process.</hb:ShortDesc>
+			<hb:LongDesc>No additional information.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>High</hb:RemediationEffort>
+			<hb:SonarTag>Convention</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc></hb:FigureDesc>
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00051">
+		<hb:RuleUID>NXE_00051</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Release candidate</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-21</hb:Creation>
+			<hb:Modified>2021-01-21</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Complex/long state machine</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>NXE_04600</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>StateMachine</hb:SubCategory>
+			<hb:Severity>Note</hb:Severity>
+			<hb:Rationale>The objective is to avoid complex implementation and help undestanding</hb:Rationale>
+			<hb:ShortDesc>It is recommended to split the combinatorial next state logic and the current state registers into separate process blocks.</hb:ShortDesc>
+			<hb:LongDesc>No additional information.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>High</hb:RemediationEffort>
+			<hb:SonarTag>Convention</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc></hb:FigureDesc>
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+
+	<!-- #############################################  -->
+	<!-- Rules below are copied pasterd from CNE ruleset-->
+	<!-- #############################################  -->
+
 	<hb:Rule UID="NXE_00200">
 		<hb:RuleUID>NXE_00200</hb:RuleUID>
 		<hb:RuleHist>
@@ -82,7 +795,8 @@
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_00300">
+	</hb:Rule>
+	<hb:Rule UID="NXE_00300">
 		<hb:RuleUID>NXE_00300</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -120,7 +834,8 @@
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_00400">
+	</hb:Rule>
+	<hb:Rule UID="NXE_00400">
 		<hb:RuleUID>NXE_00400</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -158,88 +873,12 @@
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_00500">
-		<hb:RuleUID>NXE_00500</hb:RuleUID>
-		<hb:RuleHist>
-			<hb:Status>Validated</hb:Status>
-			<hb:Engine>None</hb:Engine>
-			<hb:Version>5</hb:Version>
-			<hb:Creation>2014-09-30</hb:Creation>
-			<hb:Modified>2020-04-23</hb:Modified>
-			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
-		</hb:RuleHist>
-		<hb:RuleContent>
-			<hb:Name>Convention for signal naming</hb:Name>
-			<hb:IsParent>false</hb:IsParent>
-			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>STD_00100</hb:ParentUID>
-			<hb:Technology>VLSI</hb:Technology>
-			<hb:ApplicationFields>General</hb:ApplicationFields>
-			<hb:Category>Formatting</hb:Category>
-			<hb:SubCategory>Naming</hb:SubCategory>
-			<hb:Severity>Minor</hb:Severity>
-			<hb:Rationale>When a unique naming convention is applied to the whole source files from the design, then the resulting code is homogenized which increases readability.</hb:Rationale>
-			<hb:ShortDesc>Each word that composes a signal name are clearly identified with an underscore.</hb:ShortDesc>
-			<hb:LongDesc>In order to separate words in signal name the following convention is applied: Name_Of_The_Signal.
-The separation by uppercase (NameOfTheSignal) is not used.</hb:LongDesc>
-		</hb:RuleContent>
-		<hb:Sonarqube>
-			<hb:SonarType>Code_Smell</hb:SonarType>
-			<hb:SonarSeverity>Minor</hb:SonarSeverity>
-			<hb:RemediationEffort>Medium</hb:RemediationEffort>
-			<hb:SonarTag>Convention</hb:SonarTag>
-		</hb:Sonarqube>
-		<hb:RuleDesc>
-			<hb:GoodExDesc></hb:GoodExDesc>
-			<hb:GoodExample />
-			<hb:BadExDesc></hb:BadExDesc>
-			<hb:BadExample />
-			<hb:FigureDesc />
-			<hb:Figure />
-		</hb:RuleDesc>
 	</hb:Rule>
-	
-	<hb:Rule UID="NXE_00600">
-		<hb:RuleUID>NXE_00600</hb:RuleUID>
-		<hb:RuleHist>
-			<hb:Status>Validated</hb:Status>
-			<hb:Engine>None</hb:Engine>
-			<hb:Version>5</hb:Version>
-			<hb:Creation>2014-09-30</hb:Creation>
-			<hb:Modified>2020-04-23</hb:Modified>
-			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
-		</hb:RuleHist>
-		<hb:RuleContent>
-			<hb:Name>Convention for constant naming</hb:Name>
-			<hb:IsParent>false</hb:IsParent>
-			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>STD_00100</hb:ParentUID>
-			<hb:Technology>VLSI</hb:Technology>
-			<hb:ApplicationFields>General</hb:ApplicationFields>
-			<hb:Category>Formatting</hb:Category>
-			<hb:SubCategory>Naming</hb:SubCategory>
-			<hb:Severity>Minor</hb:Severity>
-			<hb:Rationale>When an unique naming convention is applied to the whole source files from the design, then the resulting code is homogenized which increases readability.</hb:Rationale>
-			<hb:ShortDesc>Each word that composes a constant name are clearly identified with an underscore.</hb:ShortDesc>
-			<hb:LongDesc>In order to separate words in a constant name the following convention is applied: Name_Of_The_Constant.
-The separation by uppercase (NameOfTheConstant) is not used.</hb:LongDesc>
-		</hb:RuleContent>
-		<hb:Sonarqube>
-			<hb:SonarType>Code_Smell</hb:SonarType>
-			<hb:SonarSeverity>Minor</hb:SonarSeverity>
-			<hb:RemediationEffort>Easy</hb:RemediationEffort>
-			<hb:SonarTag>Convention</hb:SonarTag>
-		</hb:Sonarqube>
-		<hb:RuleDesc>
-			<hb:GoodExDesc></hb:GoodExDesc>
-			<hb:GoodExample />
-			<hb:BadExDesc></hb:BadExDesc>
-			<hb:BadExample />
-			<hb:FigureDesc />
-			<hb:Figure />
-		</hb:RuleDesc>
-	</hb:Rule>
-	
+
+
+
+
+
 	<hb:Rule UID="NXE_00700">
 		<hb:RuleUID>NXE_00700</hb:RuleUID>
 		<hb:RuleHist>
@@ -280,7 +919,7 @@ The separation by uppercase (NameOfTheProcess) is not used.</hb:LongDesc>
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_00800">
 		<hb:RuleUID>NXE_00800</hb:RuleUID>
 		<hb:RuleHist>
@@ -321,7 +960,7 @@ The separation by uppercase (NameOfTheGeneric) is not used.</hb:LongDesc>
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_00900">
 		<hb:RuleUID>NXE_00900</hb:RuleUID>
 		<hb:RuleHist>
@@ -361,7 +1000,8 @@ The separation by uppercase (NameOfTheCustomtype) is not used.</hb:LongDesc>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_01000">
+	</hb:Rule>
+	<hb:Rule UID="NXE_01000">
 		<hb:RuleUID>NXE_01000</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
@@ -406,51 +1046,10 @@ With this convention, designer will be able to track synthesis of variable and e
 				<hb:Position>Prefix</hb:Position>
 				<hb:Value>v_</hb:Value>
 			</hb:StringParam>
-		</hb:RuleParams>		
+		</hb:RuleParams>
 	</hb:Rule>
-	
-	<hb:Rule UID="NXE_01100">
-		<hb:RuleUID>NXE_01100</hb:RuleUID>
-		<hb:RuleHist>
-			<hb:Status>Validated</hb:Status>
-			<hb:Engine>None</hb:Engine>
-			<hb:Version>6</hb:Version>
-			<hb:Creation>2014-09-30</hb:Creation>
-			<hb:Modified>2020-04-23</hb:Modified>
-			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
-		</hb:RuleHist>
-		<hb:RuleContent>
-			<hb:Name>Identification of ports direction inside entity port name</hb:Name>
-			<hb:IsParent>false</hb:IsParent>
-			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>STD_00100</hb:ParentUID>
-			<hb:Technology>VLSI</hb:Technology>
-			<hb:ApplicationFields>General</hb:ApplicationFields>
-			<hb:Category>Formatting</hb:Category>
-			<hb:SubCategory>Naming</hb:SubCategory>
-			<hb:Severity>Minor</hb:Severity>
-			<hb:Rationale>Indicating the port direction inside the port name improves readability.</hb:Rationale>
-			<hb:ShortDesc>Entity port name uses prefix to determine the port direction.</hb:ShortDesc>
-			<hb:LongDesc>Prefixes are: 
-				"i_" for input port, 
-				"o_" for output port, 
-				"b_" for bidirectional port.</hb:LongDesc>
-		</hb:RuleContent>
-		<hb:Sonarqube>
-			<hb:SonarType>Code_Smell</hb:SonarType>
-			<hb:SonarSeverity>Major</hb:SonarSeverity>
-			<hb:RemediationEffort>Medium</hb:RemediationEffort>
-			<hb:SonarTag>Convention</hb:SonarTag>
-		</hb:Sonarqube>
-		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from NXE_01100_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>NXE_01100_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from NXE_01100_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>NXE_01100_bad</hb:BadExample>
-			<hb:FigureDesc />
-			<hb:Figure />
-		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_01200">
+
+	<hb:Rule UID="NXE_01200">
 		<hb:RuleUID>NXE_01200</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
@@ -496,46 +1095,8 @@ With this convention, designer will be able to track synthesis of variable and e
 			</hb:StringParam>
 		</hb:RuleParams>
 	</hb:Rule>
-	<hb:Rule UID="NXE_01300">
-		<hb:RuleUID>NXE_01300</hb:RuleUID>
-		<hb:RuleHist>
-			<hb:Status>Validated</hb:Status>
-			<hb:Engine>None</hb:Engine>
-			<hb:Version>6</hb:Version>
-			<hb:Creation>2014-09-30</hb:Creation>
-			<hb:Modified>2020-04-23</hb:Modified>
-			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
-		</hb:RuleHist>
-		<hb:RuleContent>
-			<hb:Name>Identification of constant name</hb:Name>
-			<hb:IsParent>false</hb:IsParent>
-			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>STD_00100</hb:ParentUID>
-			<hb:Technology>VLSI</hb:Technology>
-			<hb:ApplicationFields>General</hb:ApplicationFields>
-			<hb:Category>Formatting</hb:Category>
-			<hb:SubCategory>Naming</hb:SubCategory>
-			<hb:Severity>Minor</hb:Severity>
-			<hb:Rationale>Differentiating constant object from other VHDL object improves readability.</hb:Rationale>
-			<hb:ShortDesc>Constant name starts by a prefix: "c_".</hb:ShortDesc>
-			<hb:LongDesc>No additional information.</hb:LongDesc>
-		</hb:RuleContent>
-		<hb:Sonarqube>
-			<hb:SonarType>Code_Smell</hb:SonarType>
-			<hb:SonarSeverity>Minor</hb:SonarSeverity>
-			<hb:RemediationEffort>Easy</hb:RemediationEffort>
-			<hb:SonarTag>Convention</hb:SonarTag>
-		</hb:Sonarqube>
-		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from NXE_01300_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>NXE_01300_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from NXE_01300_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>NXE_01300_bad</hb:BadExample>
-			<hb:FigureDesc />
-			<hb:Figure />
-		</hb:RuleDesc>
-	</hb:Rule>
-	
+
+
 	<hb:Rule UID="NXE_01400">
 		<hb:RuleUID>NXE_01400</hb:RuleUID>
 		<hb:RuleHist>
@@ -576,7 +1137,7 @@ With this convention, designer will be able to track synthesis of variable and e
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_01500">
 		<hb:RuleUID>NXE_01500</hb:RuleUID>
 		<hb:RuleHist>
@@ -616,9 +1177,9 @@ With this convention, designer will be able to track synthesis of variable and e
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
-	
-	
+
+
+
 	<hb:Rule UID="NXE_01600">
 		<hb:RuleUID>NXE_01600</hb:RuleUID>
 		<hb:RuleHist>
@@ -665,7 +1226,7 @@ With this convention, designer will be able to track synthesis of variable and e
 			</hb:StringParam>
 		</hb:RuleParams>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_01700">
 		<hb:RuleUID>NXE_01700</hb:RuleUID>
 		<hb:RuleHist>
@@ -706,7 +1267,7 @@ Thus, a signal that represents a rising edge of a signal named My_Sig is My_Sig_
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_01800">
 		<hb:RuleUID>NXE_01800</hb:RuleUID>
 		<hb:RuleHist>
@@ -744,47 +1305,6 @@ Thus, a signal that represents a falling edge of a signal named My_Sig is My_Sig
 			<hb:BadExDesc>Extracted from NXE_01800_bad.vhd</hb:BadExDesc>
 			<hb:BadExample >NXE_01800_bad</hb:BadExample>
 			<hb:FigureDesc />
-			<hb:Figure />
-		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_01900">
-		<hb:RuleUID>NXE_01900</hb:RuleUID>
-		<hb:RuleHist>
-			<hb:Status>Validated</hb:Status>
-			<hb:Engine>None</hb:Engine>
-			<hb:Version>6</hb:Version>
-			<hb:Creation>2014-09-30</hb:Creation>
-			<hb:Modified>2020-04-23</hb:Modified>
-			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
-		</hb:RuleHist>
-		<hb:RuleContent>
-			<hb:Name>Identification of registered signals</hb:Name>
-			<hb:IsParent>false</hb:IsParent>
-			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>STD_00100</hb:ParentUID>
-			<hb:Technology>VLSI</hb:Technology>
-			<hb:ApplicationFields>General</hb:ApplicationFields>
-			<hb:Category>Formatting</hb:Category>
-			<hb:SubCategory>Naming</hb:SubCategory>
-			<hb:Severity>Minor</hb:Severity>
-			<hb:Rationale>Identifying signal that is clock delayed of another one by reading its name improves readability.</hb:Rationale>
-			<hb:ShortDesc>The suffix of a signal that is a registration of another one is: "_r".</hb:ShortDesc>
-			<hb:LongDesc>The signal source is also included inside the signal name.
-Thus, a signal that is clock delayed of a signal named My_Signal is My_Signal_r.
-If a small number of registration of a same signal is used (less or equal to 3), SIGNAL_r can become SIGNAL_rx where x is the number of registration stage.
-If a significant number of registration of a same signal is used, use an array for registration level instead of different signals.</hb:LongDesc>
-		</hb:RuleContent>
-		<hb:Sonarqube>
-			<hb:SonarType>Code_Smell</hb:SonarType>
-			<hb:SonarSeverity>Major</hb:SonarSeverity>
-			<hb:RemediationEffort>High</hb:RemediationEffort>
-			<hb:SonarTag>Convention</hb:SonarTag>
-		</hb:Sonarqube>
-		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from NXE_01900_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>NXE_01900_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from NXE_01900_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>NXE_01900_bad</hb:BadExample>
-			<hb:FigureDesc></hb:FigureDesc>
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
@@ -866,25 +1386,25 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-		 	<hb:RuleParams>
-				<hb:StringParam>
-					<hb:ParamID>P1</hb:ParamID>
-					<hb:Position>Contain</hb:Position>
-					<hb:Value>Behavioral</hb:Value>
-				</hb:StringParam>
-				<hb:StringParam>
-					<hb:ParamID>P2</hb:ParamID>
-					<hb:Position>Contain</hb:Position>
-					<hb:Value>RTL</hb:Value>
-				</hb:StringParam>
-				<hb:StringParam>
-					<hb:ParamID>P3</hb:ParamID>
-					<hb:Position>Contain</hb:Position>
-					<hb:Value>Simulation</hb:Value>
-				</hb:StringParam>
+		<hb:RuleParams>
+			<hb:StringParam>
+				<hb:ParamID>P1</hb:ParamID>
+				<hb:Position>Contain</hb:Position>
+				<hb:Value>Behavioral</hb:Value>
+			</hb:StringParam>
+			<hb:StringParam>
+				<hb:ParamID>P2</hb:ParamID>
+				<hb:Position>Contain</hb:Position>
+				<hb:Value>RTL</hb:Value>
+			</hb:StringParam>
+			<hb:StringParam>
+				<hb:ParamID>P3</hb:ParamID>
+				<hb:Position>Contain</hb:Position>
+				<hb:Value>Simulation</hb:Value>
+			</hb:StringParam>
 		</hb:RuleParams>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_02200">
 		<hb:RuleUID>NXE_02200</hb:RuleUID>
 		<hb:RuleHist>
@@ -1003,7 +1523,8 @@ It is also best practice to keep the reset name the same between entity ports wi
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_02500">
+	</hb:Rule>
+	<hb:Rule UID="NXE_02500">
 		<hb:RuleUID>NXE_02500</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1041,45 +1562,8 @@ It is also best practice to keep the reset name the same between entity ports wi
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_02600">
-		<hb:RuleUID>NXE_02600</hb:RuleUID>
-		<hb:RuleHist>
-			<hb:Status>Validated</hb:Status>
-			<hb:Engine>None</hb:Engine>
-			<hb:Version>4</hb:Version>
-			<hb:Creation>2014-09-30</hb:Creation>
-			<hb:Modified>2020-04-23</hb:Modified>
-			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
-		</hb:RuleHist>
-		<hb:RuleContent>
-			<hb:Name>Length of signals name</hb:Name>
-			<hb:IsParent>false</hb:IsParent>
-			<hb:IsSon>true</hb:IsSon>
-			<hb:ParentUID>STD_02100</hb:ParentUID>
-			<hb:Technology>VLSI</hb:Technology>
-			<hb:ApplicationFields>General</hb:ApplicationFields>
-			<hb:Category>Formatting</hb:Category>
-			<hb:SubCategory>FileStructure</hb:SubCategory>
-			<hb:Severity>Minor</hb:Severity>
-			<hb:Rationale>Compact signal names improve readability.</hb:Rationale>
-			<hb:ShortDesc>Internal signal names length is less than 20 characters.</hb:ShortDesc>
-			<hb:LongDesc>No additional information.</hb:LongDesc>
-		</hb:RuleContent>
-		<hb:Sonarqube>
-			<hb:SonarType>Code_Smell</hb:SonarType>
-			<hb:SonarSeverity>Minor</hb:SonarSeverity>
-			<hb:RemediationEffort>Medium</hb:RemediationEffort>
-			<hb:SonarTag>User-experience</hb:SonarTag>
-		</hb:Sonarqube>
-		<hb:RuleDesc>
-			<hb:GoodExDesc />
-			<hb:GoodExample />
-			<hb:BadExDesc />
-			<hb:BadExample />
-			<hb:FigureDesc />
-			<hb:Figure />
-		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_02700">
+	</hb:Rule>
+	<hb:Rule UID="NXE_02700">
 		<hb:RuleUID>NXE_02700</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1119,7 +1603,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_02800">
+	</hb:Rule>
+	<hb:Rule UID="NXE_02800">
 		<hb:RuleUID>NXE_02800</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1149,7 +1634,7 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:RemediationEffort>Trivial</hb:RemediationEffort>
 			<hb:SonarTag>User-experience</hb:SonarTag>
 		</hb:Sonarqube>
-		<hb:RuleDesc> 
+		<hb:RuleDesc>
 			<hb:GoodExDesc />
 			<hb:GoodExample />
 			<hb:BadExDesc />
@@ -1158,7 +1643,7 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_02900">
 		<hb:RuleUID>NXE_02900</hb:RuleUID>
 		<hb:RuleHist>
@@ -1197,7 +1682,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_03000">
+	</hb:Rule>
+	<hb:Rule UID="NXE_03000">
 		<hb:RuleUID>NXE_03000</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1235,7 +1721,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_03100">
+	</hb:Rule>
+	<hb:Rule UID="NXE_03100">
 		<hb:RuleUID>NXE_03100</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1273,7 +1760,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_03200">
+	</hb:Rule>
+	<hb:Rule UID="NXE_03200">
 		<hb:RuleUID>NXE_03200</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1311,7 +1799,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_03300">
+	</hb:Rule>
+	<hb:Rule UID="NXE_03300">
 		<hb:RuleUID>NXE_03300</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1349,7 +1838,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_03400">
+	</hb:Rule>
+	<hb:Rule UID="NXE_03400">
 		<hb:RuleUID>NXE_03400</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1387,7 +1877,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_03500">
+	</hb:Rule>
+	<hb:Rule UID="NXE_03500">
 		<hb:RuleUID>NXE_03500</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1425,7 +1916,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_03600">
+	</hb:Rule>
+	<hb:Rule UID="NXE_03600">
 		<hb:RuleUID>NXE_03600</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1464,7 +1956,7 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_03700">
 		<hb:RuleUID>NXE_03700</hb:RuleUID>
 		<hb:RuleHist>
@@ -1503,7 +1995,8 @@ The definition area (for signals, constants components...) is not included in th
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_03800">
+	</hb:Rule>
+	<hb:Rule UID="NXE_03800">
 		<hb:RuleUID>NXE_03800</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1542,7 +2035,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_03900">
+	</hb:Rule>
+	<hb:Rule UID="NXE_03900">
 		<hb:RuleUID>NXE_03900</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1580,7 +2074,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_04000">
+	</hb:Rule>
+	<hb:Rule UID="NXE_04000">
 		<hb:RuleUID>NXE_04000</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1618,7 +2113,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_04100">
+	</hb:Rule>
+	<hb:Rule UID="NXE_04100">
 		<hb:RuleUID>NXE_04100</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1657,7 +2153,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_04200">
+	</hb:Rule>
+	<hb:Rule UID="NXE_04200">
 		<hb:RuleUID>NXE_04200</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1695,7 +2192,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_04300">
+	</hb:Rule>
+	<hb:Rule UID="NXE_04300">
 		<hb:RuleUID>NXE_04300</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1733,7 +2231,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_04400">
+	</hb:Rule>
+	<hb:Rule UID="NXE_04400">
 		<hb:RuleUID>NXE_04400</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1771,7 +2270,8 @@ Understanding the last modifications allows integrator to know if a bug was corr
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_04500">
+	</hb:Rule>
+	<hb:Rule UID="NXE_04500">
 		<hb:RuleUID>NXE_04500</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
@@ -1810,46 +2310,9 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
-	</hb:Rule><hb:Rule UID="NXE_04600">
-		<hb:RuleUID>NXE_04600</hb:RuleUID>
-		<hb:RuleHist>
-			<hb:Status>Validated</hb:Status>
-			<hb:Engine>None</hb:Engine>
-			<hb:Version>5</hb:Version>
-			<hb:Creation>2014-09-30</hb:Creation>
-			<hb:Modified>2020-04-23</hb:Modified>
-			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
-		</hb:RuleHist>
-		<hb:RuleContent>
-			<hb:Name>Finite State Machine coding style</hb:Name>
-			<hb:IsParent>true</hb:IsParent>
-			<hb:IsSon>false</hb:IsSon>
-			<hb:ParentUID xsi:nil="true" />
-			<hb:Technology>VLSI</hb:Technology>
-			<hb:ApplicationFields>General</hb:ApplicationFields>
-			<hb:Category>Design</hb:Category>
-			<hb:SubCategory>StateMachine</hb:SubCategory>
-			<hb:Severity>Minor</hb:Severity>
-			<hb:Rationale>State machines are identified by synthesis tools. These tools do not understand all the exotic ways of coding state machines. In order to get a real state machine use an approved state machine coding style.</hb:Rationale>
-			<hb:ShortDesc>FSM are coded using an approved method.</hb:ShortDesc>
-			<hb:LongDesc>No additional information.</hb:LongDesc>
-		</hb:RuleContent>
-		<hb:Sonarqube>
-			<hb:SonarType>Bug</hb:SonarType>
-			<hb:SonarSeverity>Blocker</hb:SonarSeverity>
-			<hb:RemediationEffort>Major</hb:RemediationEffort>
-			<hb:SonarTag>User-experience</hb:SonarTag>
-		</hb:Sonarqube>
-		<hb:RuleDesc>
-			<hb:GoodExDesc />
-			<hb:GoodExample />
-			<hb:BadExDesc />
-			<hb:BadExample />
-			<hb:FigureDesc />
-			<hb:Figure />
-		</hb:RuleDesc>
 	</hb:Rule>
-	
+
+
 	<hb:Rule UID="NXE_04700">
 		<hb:RuleUID>NXE_04700</hb:RuleUID>
 		<hb:RuleHist>
@@ -1889,7 +2352,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_04800">
 		<hb:RuleUID>NXE_04800</hb:RuleUID>
 		<hb:RuleHist>
@@ -1929,7 +2392,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_04900">
 		<hb:RuleUID>NXE_04900</hb:RuleUID>
 		<hb:RuleHist>
@@ -1969,7 +2432,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_05000">
 		<hb:RuleUID>NXE_05000</hb:RuleUID>
 		<hb:RuleHist>
@@ -2009,7 +2472,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_05100">
 		<hb:RuleUID>NXE_05100</hb:RuleUID>
 		<hb:RuleHist>
@@ -2049,7 +2512,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_05200">
 		<hb:RuleUID>NXE_05200</hb:RuleUID>
 		<hb:RuleHist>
@@ -2128,7 +2591,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_05400">
 		<hb:RuleUID>NXE_05400</hb:RuleUID>
 		<hb:RuleHist>
@@ -2168,7 +2631,7 @@ Isolating them from initialized signal improves identification of these signals 
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	
+
 	<hb:Rule UID="NXE_05500">
 		<hb:RuleUID>NXE_05500</hb:RuleUID>
 		<hb:RuleHist>
@@ -2214,6 +2677,6 @@ Isolating them from initialized signal improves identification of these signals 
 		<hb:Modified>2021-01-21</hb:Modified>
 		<hb:Revision>V1 : 2021-01-21 : Creation based on CNE V7 (2020-07-23)
 		</hb:Revision>
-	</hb:RuleSetHist>	
+	</hb:RuleSetHist>
 
 </hb:RuleSet>

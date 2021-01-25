@@ -271,10 +271,10 @@ The separation by uppercase (NameOfTheSignal) is not used. Only lowercase, alpha
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from NXE_01100_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>NXE_01100_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from NXE_01100_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>NXE_01100_bad</hb:BadExample>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample></hb:BadExample>
 			<hb:FigureDesc />
 			<hb:Figure />
 		</hb:RuleDesc>
@@ -313,10 +313,10 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:SonarTag>Convention</hb:SonarTag>
 		</hb:Sonarqube>
 		<hb:RuleDesc>
-			<hb:GoodExDesc>Extracted from NXE_01900_good.vhd</hb:GoodExDesc>
-			<hb:GoodExample>NXE_01900_good</hb:GoodExample>
-			<hb:BadExDesc>Extracted from NXE_01900_bad.vhd</hb:BadExDesc>
-			<hb:BadExample>NXE_01900_bad</hb:BadExample>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample></hb:BadExample>
 			<hb:FigureDesc></hb:FigureDesc>
 			<hb:Figure />
 		</hb:RuleDesc>

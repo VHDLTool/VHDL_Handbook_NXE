@@ -258,11 +258,11 @@ The separation by uppercase (NameOfTheSignal) is not used. Only lowercase, alpha
 			<hb:SubCategory>Naming</hb:SubCategory>
 			<hb:Severity>Minor</hb:Severity>
 			<hb:Rationale>Indicating the port direction inside the port name improves readability.</hb:Rationale>
-			<hb:ShortDesc>Entity port name at pinout level uses prefix to determine the port direction.</hb:ShortDesc>
+			<hb:ShortDesc>Entity port name at pinout level uses suffix to determine the port direction.</hb:ShortDesc>
 			<hb:LongDesc>Prefixes are: 
-				"i_" for input port, 
-				"o_" for output port, 
-				"b_" for bidirectional port.</hb:LongDesc>
+				"_i" for input port, 
+				"_o" for output port, 
+				"_b" for bidirectional port.</hb:LongDesc>
 		</hb:RuleContent>
 		<hb:Sonarqube>
 			<hb:SonarType>Code_Smell</hb:SonarType>

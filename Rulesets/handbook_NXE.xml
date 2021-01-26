@@ -61,7 +61,7 @@
 			<hb:SubCategory>Naming</hb:SubCategory>
 			<hb:Severity>Minor</hb:Severity>
 			<hb:Rationale>When a unique naming convention is applied to the whole source files from the design, then the resulting code is homogenized which increases readability.</hb:Rationale>
-			<hb:ShortDesc>Each word that composes a signal name are clearly identified with an underscore.</hb:ShortDesc>
+			<hb:ShortDesc>Signal names are combination of lowercase alpha, numeric and underscore only.</hb:ShortDesc>
 			<hb:LongDesc>In order to separate words in signal name the following convention is applied: name_of_the_signal.
 The separation by uppercase (NameOfTheSignal) is not used. Only lowercase, alphanumeric and underscore are allowed.</hb:LongDesc>
 		</hb:RuleContent>
@@ -141,8 +141,11 @@ The separation by uppercase (NameOfTheSignal) is not used. Only lowercase, alpha
 			<hb:Severity>Major</hb:Severity>
 			<hb:Rationale>Identifying signal active level by reading its name allows better readability and maintainability.</hb:Rationale>
 			<hb:ShortDesc>Signal name should not be acronyms. </hb:ShortDesc>
-			<hb:LongDesc>Signal name should not be acronyms composed for design and that lead to understanding difficulties.
-			It can be used state-of-the art acronyms of standards acronyms e.g.: sdr,dfi,axi...</hb:LongDesc>
+			<hb:LongDesc>Signal names should not be acronyms composed for design and that lead to
+understanding difficulties. It can be used state-of-the art acronyms or standards acronyms. e.g :
+sdr, dfi, axi, …
+No formal coding.
+</hb:LongDesc>
 		</hb:RuleContent>
 		<hb:Sonarqube>
 			<hb:SonarType>Code_Smell</hb:SonarType>
@@ -181,7 +184,8 @@ The separation by uppercase (NameOfTheSignal) is not used. Only lowercase, alpha
 			<hb:Severity>Major</hb:Severity>
 			<hb:Rationale>Identifying signal active level by reading its name allows better readability and maintainability.</hb:Rationale>
 			<hb:ShortDesc>Signal name shall be relevant to help understand functionality or behavior </hb:ShortDesc>
-			<hb:LongDesc></hb:LongDesc>
+			<hb:LongDesc>Signal names shall be relevant to help understanding functionality or behavior (no
+formal coding)</hb:LongDesc>
 		</hb:RuleContent>
 		<hb:Sonarqube>
 			<hb:SonarType>Code_Smell</hb:SonarType>
@@ -321,8 +325,50 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="NXE_00026">
-		<hb:RuleUID>NXE_00600</hb:RuleUID>
+
+	<hb:Rule UID="NXE_03601">
+		<hb:RuleUID>NXE_03601</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Implemented</hb:Status>
+			<hb:Engine>ZamiaCad</hb:Engine>
+			<hb:Version>6</hb:Version>
+			<hb:Creation>2014-09-30</hb:Creation>
+			<hb:Modified>2020-04-23</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Reset sensitive level naming</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_03600</hb:ParentUID>
+			<hb:Technology>FPGA</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Design</hb:Category>
+			<hb:SubCategory>Reset</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>In a FPGA, the reset signal is usually a high fan-out signal routed using a dedicated global signal routing track. Using both levels of the reset signal to asynchronously reset the flip-flops of the design results in the synthesis of the reset signal itself and its inverted version, which leads to the usage of 2 global dedicated routing tracks versus a single one, with one of the reset signal passing through an inverter in the FPGA fabric rendering the reset recovery timings closure harder to meet for the FPGA EDA tools.</hb:Rationale>
+			<hb:ShortDesc>>Reset signal name shall be suffixed by “_n” if active LOW</hb:ShortDesc>
+			<hb:LongDesc>reset signal name shall be suffixed by “_n” if active LOW, otherwise there
+is no suffix. This allows the designer to connect reset signals between entities and levels.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Critical</hb:SonarSeverity>
+			<hb:RemediationEffort>High</hb:RemediationEffort>
+			<hb:SonarTag>Design</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	
+	<hb:Rule UID="NXE_00030">
+		<hb:RuleUID>NXE_00030</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Validated</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -360,8 +406,8 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="NXE_00027">
-		<hb:RuleUID>NXE_00027</hb:RuleUID>
+	<hb:Rule UID="NXE_00031">
+		<hb:RuleUID>NXE_00031</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -399,8 +445,8 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="NXE_00028">
-		<hb:RuleUID>NXE_00028</hb:RuleUID>
+	<hb:Rule UID="NXE_00032">
+		<hb:RuleUID>NXE_00032</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -438,8 +484,8 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="NXE_00029">
-		<hb:RuleUID>NXE_00029</hb:RuleUID>
+	<hb:Rule UID="NXE_00033">
+		<hb:RuleUID>NXE_00033</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Implemented</hb:Status>
 			<hb:Engine>ZamiaCad</hb:Engine>
@@ -459,7 +505,7 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:SubCategory>Reset</hb:SubCategory>
 			<hb:Severity>Major</hb:Severity>
 			<hb:Rationale>Initialization of synchronous elements contribute to deterministic reset behaviour and simulation match between functional and Post-Place and Route.</hb:Rationale>
-			<hb:ShortDesc>AIn the sme process, you mustn't have flops with reset and flops without reset</hb:ShortDesc>
+			<hb:ShortDesc>In the same process, you mustn't have flops with reset and flops without reset</hb:ShortDesc>
 			<hb:LongDesc></hb:LongDesc>
 		</hb:RuleContent>
 		<hb:Sonarqube>
@@ -477,8 +523,8 @@ If a significant number of registration of a same signal is used, use an array f
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="NXE_00030">
-		<hb:RuleUID>NXE_00030</hb:RuleUID>
+	<hb:Rule UID="NXE_00034">
+		<hb:RuleUID>NXE_00034</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Release candidate</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -595,8 +641,8 @@ Moreover, this practice risks adding combinational blocks on clock and reset tre
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="NXE_00041">
-		<hb:RuleUID>NXE_00041</hb:RuleUID>
+	<hb:Rule UID="NXE_00042">
+		<hb:RuleUID>NXE_00042</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Release candidate</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -835,6 +881,128 @@ Moreover, this practice risks adding combinational blocks on clock and reset tre
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
+		<hb:Rule UID="NXE_00301">
+		<hb:RuleUID>NXE_00301</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Validated</hb:Status>
+			<hb:Engine>None</hb:Engine>
+			<hb:Version>1</hb:Version>
+			<hb:Creation>2021-01-26</hb:Creation>
+			<hb:Modified>2021-01-26</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Multiple clk-reset pair</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_00100</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>Naming</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>Board layout optimization can lead to FPGA/ASIC pins swapping. ASIC/FPGA development often needs several targets with pinout mismatching. In such a case, if the VHDL code contains signal with FPGA/ASIC pins number information, it can lead to major code modification to update this value or lead to misunderstanding.</hb:Rationale>
+			<hb:ShortDesc>The extension name for multiple clock/reset pair should be identical.</hb:ShortDesc>
+			<hb:LongDesc>e.g: { arst_dfi_i , clk_dfi_i } if related to dfi clock domain, and { arst_axi_i , clk_axi_i } is related to AXI
+clock domain.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Critical</hb:SonarSeverity>
+			<hb:RemediationEffort>Easy</hb:RemediationEffort>
+			<hb:SonarTag>Bad-practice</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_00901">
+		<hb:RuleUID>NXE_00901</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Implemented</hb:Status>
+			<hb:Engine>ZamiaCad</hb:Engine>
+			<hb:Version>5</hb:Version>
+			<hb:Creation>2014-09-30</hb:Creation>
+			<hb:Modified>2020-04-23</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>File name of an entity</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_00900</hb:ParentUID>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>Naming</hb:SubCategory>
+			<hb:Severity>Minor</hb:Severity>
+			<hb:Rationale>The match between file name and entity name improves the search for an entity inside a project.</hb:Rationale>
+			<hb:ShortDesc>The file name for an entity VHDL file match exactly the entity name.</hb:ShortDesc>
+			<hb:LongDesc>The file name shall match exactly the entity name to avoid confusion from others
+entities that could have identical names.</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>Trivial</hb:RemediationEffort>
+			<hb:SonarTag>Convention</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc />
+			<hb:GoodExample />
+			<hb:BadExDesc />
+			<hb:BadExample />
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+	</hb:Rule>
+	<hb:Rule UID="NXE_01101">
+		<hb:RuleUID>NXE_01101</hb:RuleUID>
+		<hb:RuleHist>
+			<hb:Status>Implemented</hb:Status>
+			<hb:Engine>ZamiaCad</hb:Engine>
+			<hb:Version>4</hb:Version>
+			<hb:Creation>2014-09-30</hb:Creation>
+			<hb:Modified>2020-04-23</hb:Modified>
+			<hb:Revision>Not used anymore.See Git logs.</hb:Revision>
+		</hb:RuleHist>
+		<hb:RuleContent>
+			<hb:Name>Multiple architecture for entities</hb:Name>
+			<hb:IsParent>false</hb:IsParent>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_01100</hb:IsSon>
+			<hb:Technology>VLSI</hb:Technology>
+			<hb:ApplicationFields>General</hb:ApplicationFields>
+			<hb:Category>Formatting</hb:Category>
+			<hb:SubCategory>FileStructure</hb:SubCategory>
+			<hb:Severity>Major</hb:Severity>
+			<hb:Rationale>When the design is synthesized, only one architecture is synthesized for each synthesized entity. Including only one architecture per file reduces a potential architecture selection error at synthesis level.</hb:Rationale>
+			<hb:ShortDesc>Each architecture of an entity should be implemented in a separate file.</hb:ShortDesc>
+			<hb:LongDesc>If the design of a given entity has multiple architecture names (e.g: “rtl”,
+“simu”), each architecture shall be implemented in a separate file named with the following
+convention:
+<entity>_arch_<arch_name>.vhd (e.g: ddr_fsm_arch_rtl.vhd)</hb:LongDesc>
+		</hb:RuleContent>
+		<hb:Sonarqube>
+			<hb:SonarType>Code_Smell</hb:SonarType>
+			<hb:SonarSeverity>Major</hb:SonarSeverity>
+			<hb:RemediationEffort>Easy</hb:RemediationEffort>
+			<hb:SonarTag>Design</hb:SonarTag>
+		</hb:Sonarqube>
+		<hb:RuleDesc>
+			<hb:GoodExDesc></hb:GoodExDesc>
+			<hb:GoodExample ></hb:GoodExample>
+			<hb:BadExDesc></hb:BadExDesc>
+			<hb:BadExample ></hb:BadExample>
+			<hb:FigureDesc />
+			<hb:Figure />
+		</hb:RuleDesc>
+
 	<hb:Rule UID="NXE_00400">
 		<hb:RuleUID>NXE_00400</hb:RuleUID>
 		<hb:RuleHist>

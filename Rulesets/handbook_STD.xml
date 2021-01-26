@@ -83,13 +83,8 @@
 		<hb:RuleParams>
 			<hb:StringParam>
 				<hb:ParamID>P1</hb:ParamID>
-				<hb:Position>Contain</hb:Position>
+				<hb:Position>Equal</hb:Position>
 				<hb:Value>clk</hb:Value>
-			</hb:StringParam>
-			<hb:StringParam>
-				<hb:ParamID>P2</hb:ParamID>
-				<hb:Position>Contain</hb:Position>
-				<hb:Value>clock</hb:Value>
 			</hb:StringParam>
 		</hb:RuleParams>
 	</hb:Rule>
@@ -138,17 +133,12 @@ If several reset signals are used, each reset is identified with a different nam
 			<hb:StringParam>
 				<hb:ParamID>P1</hb:ParamID>
 				<hb:Position>Contain</hb:Position>
-				<hb:Value>reset</hb:Value>
+				<hb:Value>arst</hb:Value>
 			</hb:StringParam>
 			<hb:StringParam>
 				<hb:ParamID>P2</hb:ParamID>
 				<hb:Position>Contain</hb:Position>
 				<hb:Value>rst</hb:Value>
-			</hb:StringParam>
-			<hb:StringParam>
-				<hb:ParamID>P3</hb:ParamID>
-				<hb:Position>Contain</hb:Position>
-				<hb:Value>clr</hb:Value>
 			</hb:StringParam>
 		</hb:RuleParams>
 	</hb:Rule>
@@ -174,7 +164,7 @@ If several reset signals are used, each reset is identified with a different nam
 			<hb:SubCategory>Naming</hb:SubCategory>
 			<hb:Severity>Minor</hb:Severity>
 			<hb:Rationale>Labels improve readability of simulations, VHDL source code and synthesis logs.</hb:Rationale>
-			<hb:ShortDesc>Processes are identified by a label.</hb:ShortDesc>
+			<hb:ShortDesc>Processes are identified by a label to help undestand functionality.</hb:ShortDesc>
 			<hb:LongDesc>No additional information.</hb:LongDesc>
 		</hb:RuleContent>
 		<hb:Sonarqube>

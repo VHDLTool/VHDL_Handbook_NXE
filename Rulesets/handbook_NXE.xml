@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hb:RuleSet xmlns:hb="HANDBOOK"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="HANDBOOK ../XSD/handbook.xsd">
-	<hb:Rule UID="NXE_000010">
-		<hb:RuleUID>NXE_000010</hb:RuleUID>
+	<hb:Rule UID="NXE_00010">
+		<hb:RuleUID>NXE_00010</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Release candidate</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -119,8 +119,8 @@ The separation by uppercase (NameOfTheSignal) is not used. Only lowercase, alpha
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="NXE_000021">
-		<hb:RuleUID>NXE_000021</hb:RuleUID>
+	<hb:Rule UID="NXE_00021">
+		<hb:RuleUID>NXE_00021</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Release candidate</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -162,8 +162,8 @@ No formal coding.
 			<hb:Figure />
 		</hb:RuleDesc>
 	</hb:Rule>
-	<hb:Rule UID="NXE_000022">
-		<hb:RuleUID>NXE_000022</hb:RuleUID>
+	<hb:Rule UID="NXE_00022">
+		<hb:RuleUID>NXE_00022</hb:RuleUID>
 		<hb:RuleHist>
 			<hb:Status>Release candidate</hb:Status>
 			<hb:Engine>None</hb:Engine>
@@ -419,8 +419,8 @@ is no suffix. This allows the designer to connect reset signals between entities
 		<hb:RuleContent>
 			<hb:Name>Datapath elements initialization</hb:Name>
 			<hb:IsParent>false</hb:IsParent>
-			<hb:IsSon>tue</hb:IsSon>
-			<hb:ParentUID> STD_03800</hb:ParentUID>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_03800</hb:ParentUID>
 			<hb:Technology>FPGA</hb:Technology>
 			<hb:ApplicationFields>General</hb:ApplicationFields>
 			<hb:Category>Design</hb:Category>
@@ -458,7 +458,7 @@ is no suffix. This allows the designer to connect reset signals between entities
 		<hb:RuleContent>
 			<hb:Name>Non Datapath elements initialization</hb:Name>
 			<hb:IsParent>false</hb:IsParent>
-			<hb:IsSon>tue</hb:IsSon>
+			<hb:IsSon>true</hb:IsSon>
 			<hb:ParentUID>STD_03800</hb:ParentUID>
 			<hb:Technology>FPGA</hb:Technology>
 			<hb:ApplicationFields>General</hb:ApplicationFields>
@@ -497,8 +497,8 @@ is no suffix. This allows the designer to connect reset signals between entities
 		<hb:RuleContent>
 			<hb:Name>Shared data nature reset</hb:Name>
 			<hb:IsParent>false</hb:IsParent>
-			<hb:IsSon>tue</hb:IsSon>
-			<hb:ParentUID> STD_03800</hb:ParentUID>
+			<hb:IsSon>true</hb:IsSon>
+			<hb:ParentUID>STD_03800</hb:ParentUID>
 			<hb:Technology>FPGA</hb:Technology>
 			<hb:ApplicationFields>General</hb:ApplicationFields>
 			<hb:Category>Design</hb:Category>
@@ -986,7 +986,7 @@ entities that could have identical names.</hb:LongDesc>
 			<hb:LongDesc>If the design of a given entity has multiple architecture names (e.g: “rtl”,
 “simu”), each architecture shall be implemented in a separate file named with the following
 convention:
-				<entity>_arch_<arch_name>.vhd (e.g: ddr_fsm_arch_rtl.vhd)</hb:LongDesc>
+				entity_arch_arch_name.vhd (e.g: ddr_fsm_arch_rtl.vhd)</hb:LongDesc>
 				</hb:RuleContent>
 				<hb:Sonarqube>
 					<hb:SonarType>Code_Smell</hb:SonarType>
@@ -1002,7 +1002,7 @@ convention:
 					<hb:FigureDesc />
 					<hb:Figure />
 				</hb:RuleDesc>
-
+</hb:Rule>
 				<hb:Rule UID="NXE_00400">
 					<hb:RuleUID>NXE_00400</hb:RuleUID>
 					<hb:RuleHist>

@@ -64,7 +64,8 @@
 			<hb:Severity>Major</hb:Severity>
 			<hb:Rationale>The clock signal is critical. This signal needs to be easily found through the design.</hb:Rationale>
 			<hb:ShortDesc>The clock signal name includes "clk" or "clock".</hb:ShortDesc>
-			<hb:LongDesc>A signal is considered as a "CLOCK" whenever it is used to synchronize other signals to its rising or falling edge within a synchronous process with one of the following VHDL functions ('event, rising_edge or falling_edge), or when it is mapped on an IP clock input.</hb:LongDesc>
+			<hb:LongDesc>A signal is considered as a "CLOCK" whenever it is used to synchronize other signals to its rising or falling edge within a synchronous process with one of the following VHDL functions ('event, rising_edge or falling_edge), or when it is mapped on an IP clock input.
+			Keep only one clock per module if possible.</hb:LongDesc>
 		</hb:RuleContent>
 		<hb:Sonarqube>
 			<hb:SonarType>Code_Smell</hb:SonarType>
